@@ -349,9 +349,10 @@ footer {
     overflow: hidden;
 
 }
-.wishlist{
+
+.wishlist {
     position: absolute;
-    top:5px;
+    top: 5px;
     right: 10px;
     width: 3.5rem;
     height: 3.5rem;
@@ -362,9 +363,65 @@ footer {
     cursor: pointer;
     border: 1px solid #ed1b26;
     font-size: 1.2rem;
-    transition:  0.3s;
+    transition: 0.3s;
 }
+
 .wishlist:hover {
     background-color: #ed1b26;
     color: #fff;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 2rem;
+
+}
+
+.about_box {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.about__image {
+    width: 50%;
+    height: 100%;
+
+}
+
+.about__data {
+    width: 50%;
+}
+
+.about__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_box:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.slide__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide__box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.slide__image {
+    width: 50%;
+    height: 100%;
+}
+
+.slide__data {
+    width: 50%;
 }
