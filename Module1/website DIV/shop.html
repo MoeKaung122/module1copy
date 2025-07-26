@@ -7,6 +7,8 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -52,7 +54,7 @@
         <h1 class="page__title">our products</h1>
         <div class="product__container">
 
-            <div class="product__cart">
+            <div class="product__cart" data-aos="fade-down">
                 <div class="product__image">
                     <img src="../img/watch(1).png" alt="product1" class="product__img">
                 </div>
@@ -67,7 +69,7 @@
                     <button class="btn">view more</button>
                 </div>
             </div>
-            <div class="product__cart">
+            <div class="product__cart" data-aos="fade-down">
                 <div class="product__image">
                     <img src="../img/watch(2).png" alt="product1" class="product__img">
                 </div>
@@ -78,11 +80,11 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
                         voluptas, impedit dolorem deleniti ipsam vel harum officia magni rem cum?
                     </p>
-                     <span class="wishlist"><i class="fa fa-heart"></i></span>
+                    <span class="wishlist"><i class="fa fa-heart"></i></span>
                     <button class="btn">view more</button>
                 </div>
             </div>
-            <div class="product__cart">
+            <div class="product__cart" data-aos="fade-down">
                 <div class="product__image">
                     <img src="../img/watch(3).png" alt="product1" class="product__img">
                 </div>
@@ -93,11 +95,11 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
                         voluptas, impedit dolorem deleniti ipsam vel harum officia magni rem cum?
                     </p>
-                     <span class="wishlist"><i class="fa fa-heart"></i></span>
+                    <span class="wishlist"><i class="fa fa-heart"></i></span>
                     <button class="btn">view more</button>
                 </div>
             </div>
-            <div class="product__cart">
+            <div class="product__cart" data-aos="fade-down">
                 <div class="product__image">
                     <img src="../img/watch(4).png" alt="product1" class="product__img">
                 </div>
@@ -108,11 +110,11 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
                         voluptas, impedit dolorem deleniti ipsam vel harum officia magni rem cum?
                     </p>
-                     <span class="wishlist"><i class="fa fa-heart"></i></span>
+                    <span class="wishlist"><i class="fa fa-heart"></i></span>
                     <button class="btn">view more</button>
                 </div>
             </div>
-            <div class="product__cart">
+            <div class="product__cart" data-aos="fade-right">
                 <div class="product__image">
                     <img src="../img/watch(5).png" alt="product1" class="product__img">
                 </div>
@@ -123,11 +125,11 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
                         voluptas, impedit dolorem deleniti ipsam vel harum officia magni rem cum?
                     </p>
-                     <span class="wishlist"><i class="fa fa-heart"></i></span>
+                    <span class="wishlist"><i class="fa fa-heart"></i></span>
                     <button class="btn">view more</button>
                 </div>
             </div>
-            <div class="product__cart">
+            <div class="product__cart" data-aos="fade-left">
                 <div class="product__image">
                     <img src="../img/watch(6).png" alt="product1" class="product__img">
                 </div>
@@ -138,7 +140,7 @@
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
                         voluptas, impedit dolorem deleniti ipsam vel harum officia magni rem cum?
                     </p>
-                     <span class="wishlist"><i class="fa fa-heart"></i></span>
+                    <span class="wishlist"><i class="fa fa-heart"></i></span>
                     <button class="btn">view more</button>
                 </div>
             </div>
@@ -157,7 +159,7 @@
                     <a href="about.html" class="footer__link"><i class="fa fa-arrow-right"></i> about</a>
                 </li>
                 <li class="footer__item">
-                    <a href="shop.html" class="footer__link"><i class="fa fa-arrow-right"></i> shop</a>
+                    <a href="shop.html" class="footer__link"><i class="fa fa-arrow-right action"></i> shop</a>
                 </li>
                 <li class="footer__item">
                     <a href="contact.html" class="footer__link"><i class="fa fa-arrow-right"></i> contact</a>
@@ -221,6 +223,13 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            delay: 1000,
+        });
+    </script>
 </body>
 
 </html>

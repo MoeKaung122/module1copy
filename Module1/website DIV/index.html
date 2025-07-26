@@ -13,14 +13,14 @@
 <body>
     <header>
         <div class="logo">
-            <div class="logo__image">
+            <div class="logo__image heartbeat">
                 <img src="img/logo.png" alt="Log0__img" class="logo__img">
             </div>
         </div>
         <div class="menu">
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="index.html" class="menu__link">home</a>
+                    <a href="index.html" class="menu__link action" >home</a>
                 </li>
                 <li class="menu__item">
                     <a href="about.html" class="menu__link">about</a>
@@ -146,6 +146,10 @@
                 </div>
 
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
         </div>
     </main>
     <footer>
@@ -225,8 +229,26 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {});
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+
+            },
+            loop: true,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            },
+            grabCursor: true,
+
+        });
     </script>
+
 </body>
 
 </html>
