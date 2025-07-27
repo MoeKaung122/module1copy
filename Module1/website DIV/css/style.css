@@ -27,6 +27,20 @@ main {
     padding: 2rem 3%;
 }
 
+::-webkit-scrollbar {
+    width: 8px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ed1b26;
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
 /* ================ HEADER ================*/
 header {
     display: flex;
@@ -40,6 +54,10 @@ header {
     box-shadow: 0 0.5rem 1rem #0001;
     z-index: 100;
 
+}
+
+.hamburger {
+    display: none;
 }
 
 .logo__image {
@@ -77,6 +95,7 @@ header {
 .action {
     background: #ed1b26;
     color: #fff;
+
 }
 
 .icon__item {
@@ -144,6 +163,7 @@ footer {
 
 .social__list {
     display: flex;
+
     gap: 1rem;
 }
 
@@ -387,7 +407,7 @@ footer {
 
 .about__image {
     width: 50%;
-    height: 100%;
+    /* height: 100%; */
 
 }
 
@@ -435,6 +455,11 @@ footer {
 
 .slide__data {
     width: 50%;
+}
+
+::selection {
+    background-color: #ed1b26;
+    color: #fff;
 }
 
 /* ----------------------------------------------
@@ -526,4 +551,112 @@ footer {
 .heartbeat {
     -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
     animation: heartbeat 1.5s ease-in-out infinite both
+}
+
+/* media query  (responsive)*/
+
+
+/* laptop */
+@media (max-width: 1024px) {
+    .product__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .product__image {
+        height: 13rem;
+    }
+
+
+    .product__cart {
+        padding: 1rem;
+    }
+
+    .form__container {
+
+        padding: 1.5rem;
+
+
+    }
+
+
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    footer {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .about_box,
+    .about_box:nth-child(even) {
+        flex-direction: column;
+
+    }
+
+    .about__image,
+    .about__data {
+        width: 100%;
+    }
+
+    .product__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product__image {
+        height: 10rem;
+    }
+
+
+    .product__cart {
+        padding: 0.5rem;
+    }
+
+    .rr3 {
+        max-width: 600px;
+    }
+
+    .r3 {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .form__group {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    footer {
+
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+
+    }
+
+    .social__list {
+        justify-content: center;
+    }
+
+    .product__container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .forget__register {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
 }
